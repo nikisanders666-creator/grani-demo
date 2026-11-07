@@ -86,18 +86,3 @@
   .ribbon-inner span:nth-of-type(n+4),
   .dialog-options .unavailable > span[aria-hidden="true"] { display: none; }
 }
-
-
-/* Компактная ёлочная гирлянда на телефонах / узких экранах. */
-@media (max-width:760px) {
-  .holiday-garland {height:37px;top:calc(100% - 7px)}
-  .holiday-garland__foliage {background-size:auto 38px}
-  .holiday-garland__lights {top:2px;height:25px}
-  .garland-light {flex-basis:5px;width:5px;height:7px;margin-top:4px;
-    box-shadow:0 0 3px 1px var(--bulb),0 0 8px 2px var(--bulb);}
-  .garland-light:nth-child(even) {display:none}
-}
-/* Мобильное меню открывается над хвоей и остаётся полностью кликабельным. */
-@media (max-width:760px) {
-  .nav.is-open { z-index:4; }
-}
