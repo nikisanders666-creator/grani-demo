@@ -1,0 +1,49 @@
+/* ГРАНИ — адаптация для планшетов и телефонов */
+@media(max-width:1040px){
+  .container{width:min(100% - 56px,var(--container))}
+  .nav{gap:14px}.nav a{font-size:11px}.brand-caption{display:none}
+  .hero-grid{gap:24px}.hero-logo{width:195px;height:105px;margin-bottom:4px}
+  h1.display{font-size:clamp(51px,6.5vw,75px)}.portrait-wrap{height:570px}
+  .intro-grid,.teacher-grid,.community-grid,.contact-grid{gap:45px}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .program h3{font-size:26px}.program{padding:24px}
+}
+@media(max-width:760px){
+  .container{width:calc(100% - 38px)}
+  .topline-inner{font-size:10px;gap:12px}.topline span:last-child{display:none}
+  .header-inner{min-height:68px}
+  .brand-name{font-size:27px}.menu-toggle{display:flex}.header-cta{margin-left:auto;padding:8px 12px;min-height:40px;font-size:11px}
+  .nav{display:none;position:absolute;top:68px;left:0;right:0;padding:15px 20px 23px;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(48,38,31,.09);flex-direction:column;align-items:stretch;gap:0}
+  .nav.is-open{display:flex}.nav a{padding:12px;font-size:14px;border-bottom:1px solid var(--line)}
+  .hero{padding:28px 0 46px}.hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-logo{width:210px;height:110px;margin-bottom:0}
+  .hero .eyebrow{margin-bottom:15px}
+  h1.display{font-size:clamp(52px,11vw,76px);max-width:600px;margin-bottom:18px}
+  .hero-desc{font-size:15px;margin-bottom:23px}
+  .hero-note{margin-top:28px}
+  .hero-visual{padding:5px 12px 15px 0;max-width:540px;margin:auto;width:100%}
+  .portrait-border{inset:0 0 0 12px}.portrait-wrap{height:540px}
+  .hero-stamp{right:-9px;width:74px;height:74px}.hero-stamp span{font-size:24px}
+  .ribbon-inner{justify-content:center;gap:20px}.ribbon-inner span:nth-last-child(-n+2),.ribbon-inner i:nth-last-child(-n+2){display:none}
+  .intro,.skills,.programs,.teacher,.community,.materials,.contact{padding:72px 0}
+  .intro-grid,.teacher-grid,.community-grid,.contact-grid,.materials-grid{grid-template-columns:1fr;gap:25px}
+  .intro-right{padding-top:0}.intro-right p{font-size:15px}
+  .section-title{font-size:clamp(38px,9vw,56px)}
+  .section-heading{align-items:flex-start;flex-direction:column;gap:12px}.section-heading p{max-width:100%}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}.skill{min-height:184px;padding:21px}.skill h3{font-size:22px}
+  .programs-grid{grid-template-columns:1fr;gap:12px}.program{min-height:270px}.program-mark{font-size:43px}.program h3{font-size:28px}
+  .teacher-text{padding-left:22px}.teacher-text p{font-size:15px}
+  .community-illustration{min-height:290px}.community-illustration:before{top:-290px}
+  .material{min-height:218px}.contact-details{margin-top:12px}
+  .footer-inner{flex-direction:column;align-items:flex-start}.footer-inner p{text-align:left}
+  .float-contact{right:14px;bottom:14px}
+}
+@media(max-width:430px){
+  .header-cta{font-size:10px;padding:8px 10px;min-height:36px}.hero-logo{width:180px;height:95px}
+  h1.display{font-size:53px}.hero-actions{gap:16px}.btn{padding:13px 17px;font-size:12px}
+  .portrait-wrap{height:460px}.portrait-label{left:22px;bottom:24px}.portrait-label strong{font-size:27px}
+  .skills-grid{grid-template-columns:1fr}.skill{min-height:140px}.skill h3{margin-top:12px}
+  .contact-detail{grid-template-columns:80px 1fr}.teacher-text .credentials{grid-template-columns:1fr}
+  .dialog{padding:27px}.dialog h2{font-size:31px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
